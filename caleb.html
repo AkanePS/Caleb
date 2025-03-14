@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca" lang="ca">
+<head>
+    <link rel="stylesheet" href="style_caleb.css"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <title>Love formulary</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Love formulary</h2>
+        <form action="send_email.php" method="POST">
+            <div class="insert">
+                <label>Insert your name:</label>
+                <input name="name" type="text" required placeholder="First name"/>
+                <input name="surname" type="text" required placeholder="Last name"/>
+            </div>
+            <br>
+            <div class="yesno">
+                <p>Do you love your girlfriend?</p>
+                <input name="lovegf" type="radio" value="Yes" id="yes">
+                <label for="yes">Yes</label>
+                <input name="lovegf" type="radio" value="No" id="no">
+                <label for="no">No</label>
+            </div>
+            <br>
+            <div class="ifyes">
+                <p>If you replied "yes", explain why:</p>
+                <textarea name="message" placeholder="Write your love message here..."></textarea>
+            </div>
+            <br>
+            <input type="submit" value="Send">
+
+            <div class="img"><img src="https://www.laityfamilylife.va/content/dam/laityfamilylife/News/2018/GIAPPONE_-_0914_-_kimi_no_1.png/_jcr_content/renditions/cq5dam.web.1280.1280.png"></div>
+        </form>
+    </div>
+
+</body>
+</html>
